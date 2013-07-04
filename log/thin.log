@@ -1,0 +1,38 @@
+>> Writing PID to tmp/pids/thin.pid
+>> Thin web server (v1.5.1 codename Straight Razor)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:3030, CTRL+C to stop
+[33mFor the twitter widget to work, you need to put in your twitter API keys in the jobs/twitter.rb file.[0m
+127.0.0.1 - - [22/Jun/2013 14:27:20] "GET /events HTTP/1.1" 200 - 57.4933
+127.0.0.1 - - [22/Jun/2013 14:27:20] "GET /sample HTTP/1.1" 200 2256 0.0067
+127.0.0.1 - - [22/Jun/2013 14:27:23] "GET /views/text.html HTTP/1.1" 304 - 0.0041
+127.0.0.1 - - [22/Jun/2013 14:27:23] "GET /views/meter.html HTTP/1.1" 304 - 0.0015
+127.0.0.1 - - [22/Jun/2013 14:27:23] "GET /views/list.html HTTP/1.1" 304 - 0.0009
+127.0.0.1 - - [22/Jun/2013 14:27:23] "GET /views/number.html HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [22/Jun/2013 14:27:23] "GET /views/graph.html HTTP/1.1" 304 - 0.0018
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /events HTTP/1.1" 200 - 29.5853
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /sample HTTP/1.1" 200 2256 0.0184
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /views/text.html HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /views/meter.html HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /views/list.html HTTP/1.1" 304 - 0.0012
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /views/number.html HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [22/Jun/2013 14:27:53] "GET /views/graph.html HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /events HTTP/1.1" 200 - 276.8909
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /sample HTTP/1.1" 200 2442 0.0048
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /views/text.html HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /views/meter.html HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /views/list.html HTTP/1.1" 304 - 0.0010
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /views/number.html HTTP/1.1" 304 - 0.0009
+127.0.0.1 - - [22/Jun/2013 14:32:30] "GET /views/graph.html HTTP/1.1" 304 - 0.0009
+[33mFor the twitter widget to work, you need to put in your twitter API keys in the jobs/twitter.rb file.[0m
+[33mFor the twitter widget to work, you need to put in your twitter API keys in the jobs/twitter.rb file.[0m
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /events HTTP/1.1" 200 - 983.1689
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /sample HTTP/1.1" 200 2442 0.0262
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /views/text.html HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /views/meter.html HTTP/1.1" 304 - 0.0008
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /views/list.html HTTP/1.1" 304 - 0.0007
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /views/number.html HTTP/1.1" 304 - 0.0012
+127.0.0.1 - - [22/Jun/2013 14:48:53] "GET /views/graph.html HTTP/1.1" 304 - 0.0009
+[33mFor the twitter widget to work, you need to put in your twitter API keys in the jobs/twitter.rb file.[0m
+[33mFor the twitter widget to work, you need to put in your twitter API keys in the jobs/twitter.rb file.[0m
+>> Waiting for 1 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
