@@ -3,9 +3,11 @@ require 'mongo'
 require 'jira'
 require_relative '../lib/issues'
 require_relative '../lib/people'
+require_relative '../lib/servicenow'
 
 issues = Issues.new
 people = People.new
+service_now = ServiceNow.new
 
 SCHEDULER.every '1m' do
 
@@ -50,5 +52,9 @@ SCHEDULER.every '1m' do
   releasePrimary =  people.find_person(Date.today, RELEASE_PRIMARY)
   releaseSecondary = people.find_person(Date.today, RELEASE_SECONDARY)
   send_event('rel', { text: releasePrimary + "<br/>" + releaseSecondary })
+
+  rcaCount = service_now.get_rca_count()
+  rcaCountPrevious = service_now.get_rca_count_previous()
+  send_event('rca', { current: rcaCount, last: rcaCountPrevious })
 
 end
