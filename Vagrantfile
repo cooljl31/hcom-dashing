@@ -3,7 +3,7 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "hcombox"
-  config.vm.forward_port 8081, 4567
+  config.vm.forward_port 8081, 3030
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
