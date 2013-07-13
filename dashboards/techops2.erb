@@ -1,0 +1,46 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for(:title) { "Hotels.com TechOps" } %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ops" data-view="People" data-title="Production Support" data-text="A" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="triage" data-view="Number" data-title="Triage Q" data-moreinfo="" data-prefix=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ready" data-view="Number" data-title="Ready Q" data-moreinfo="" data-prefix=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="countgraph" data-view="Graph" data-title="Ticket Count" style="background-color:#ff9618"></div>
+    </li>
+    
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="rel" data-view="People" data-title="Release Support" data-text="A" ></div>
+    </li>
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="releasetriage" data-view="Number" data-title="Triage Q" data-moreinfo="" data-prefix=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="releaseready" data-view="Number" data-title="Ready Q" data-moreinfo="" data-prefix=""></div>
+    </li>
+    
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="releasecountgraph" data-view="Graph" data-title="Ticket Count" style="background-color:#ff9618"></div>
+    </li>
+    
+  </ul>
+  <center><div style="font-size: 12px">Hotels.com TechOps</div></center>
+</div>
