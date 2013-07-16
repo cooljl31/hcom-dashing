@@ -29,7 +29,7 @@ class Issues
 
   # Get total issues
   def get_total(label)
-    allCount = @@client.Issue.jql('project = "INFRA" AND resolution = "Unresolved" AND labels in "(' +  label + ')"').size
+    allCount = @@client.Issue.jql('project = "INFRA" AND resolution = "Unresolved" AND labels in (' +  label + ')').size
     doc = { "date" => Date.today.to_time.utc, "count" => allCount }
     @@DB.collection(label + "-count-all").update( {"date" => Date.today.to_time.utc}, {"$set" => doc}, { upsert: true } )
     return allCount
@@ -54,7 +54,7 @@ class Issues
 
   # Get triage count 
   def get_triage_count(label)
-    count = @@client.Issue.jql('project = "INFRA" AND Status = "New" AND labels in "(' +  label + ')"').size
+    count = @@client.Issue.jql('project = "INFRA" AND Status = "New" AND labels in (' +  label + ')').size
     doc = { "date" => Date.today.to_time.utc, "count" => count }
     @@DB.collection(label + "-count-triage").update( {"date" => Date.today.to_time.utc}, {"$set" => doc}, { upsert: true } )
     count
@@ -69,7 +69,7 @@ class Issues
 
   # Get ready count 
   def get_ready_count(label)
-    count = @@client.Issue.jql('project = "INFRA" AND (Status = "Open" OR Status = "Reopened" OR Status = "More Info Required") AND labels in "(' +  label + ')"').size
+    count = @@client.Issue.jql('project = "INFRA" AND (Status = "Open" OR Status = "Reopened" OR Status = "More Info Required") AND labels in (' +  label + ')').size
     doc = { "date" => Date.today.to_time.utc, "count" => count }
     @@DB.collection(label + "-count-ready").update( {"date" => Date.today.to_time.utc}, {"$set" => doc}, { upsert: true } )
     count
