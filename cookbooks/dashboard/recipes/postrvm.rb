@@ -22,3 +22,18 @@ bash "run bundle install in app directory" do
 #  code "bundle install --verbose"
   code "./lbundle.sh"
 end
+
+template "dashing" do
+  path "/etc/init.d/hcom-dashing"
+  source "hcom-dashing.erb"
+  owner "root"
+  group "root"
+  mode "0755"
+#  notifies :enable, "service[dashing]"
+#  notifies :start, "service[dashing]"
+end
+
+#service "dashing" do
+#  supports :restart => true, :start => true, :stop => true, :reload => true
+#  action :nothing
+#end
